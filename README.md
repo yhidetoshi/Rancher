@@ -9,7 +9,8 @@ Rancher
   - EC2
     - CoreOS
       - CoreOS stable (1353.8.0)
-  - Rancher
+  - Rancher-server
+    - `$ `docker run -d --restart=always -p 8080:8080 rancher/server`
   
  
 - Rancherサーバのコンテナが動いているCore-OSのホストで実行した。
