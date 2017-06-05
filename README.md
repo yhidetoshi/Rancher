@@ -10,7 +10,7 @@ Rancher
     - CoreOS
       - CoreOS stable (1353.8.0)
   - Rancher-server
-    - `$ `docker run -d --restart=always -p 8080:8080 rancher/server`
+    - $ `docker run -d --restart=always -p 8080:8080 rancher/server`
   
  
 - Rancherサーバのコンテナが動いているCore-OSのホストで実行した。
