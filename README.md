@@ -12,9 +12,10 @@ Rancher
   - Rancher-server
     - $ `docker run -d --restart=always -p 8080:8080 rancher/server`
   
- 
-- Rancherサーバのコンテナが動いているCore-OSのホストで実行した。
-  - `$ docker run --rm -it --privileged -v /var/run/docker.sock:/var/run/docker.sock rancher/agent http://<RancherホストのIP>:8080`
+- Agentを追加するホストで下記のコマンドを実行する
+`$ docker run --rm -it --privileged -v /var/run/docker.sock:/var/run/docker.sock rancher/agent <Registry-URL>:8080`
+
+※ `<Registry-URL>の値は、Admin --> Setting  --> Host Registration URLで設定する`
   
 
 
