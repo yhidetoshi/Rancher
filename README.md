@@ -11,6 +11,10 @@ Rancher
     - Docker
       - `Docker version 17.05.0-ce, build 89658be`
 
+- ホスト追加コマンド
+  - `追加するCoreOS上で実行`
+    - `docker run --rm -it --privileged -v /var/run/docker.sock:/var/run/docker.sock rancher/agent <Registry-URL>:8080`
+
 - core1
 ```
 core@core-01 ~ $ docker ps
